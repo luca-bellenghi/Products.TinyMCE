@@ -37,6 +37,8 @@
 
 	function getVal(id) {
 		var elm = get(id);
+        if (!elm)
+            return false
 
 		if (elm.nodeName == "SELECT")
 			return elm.options[elm.selectedIndex].value;
@@ -273,11 +275,11 @@
                 } else if (data.type == 'audio') {
                     if (data.video.sources[0])
                         setVal('src', data.video.sources[0].src);
-                    
+
                     src = data.video.sources[1];
                     if (src)
                         setVal('audio_altsource1', src.src);
-                    
+
                     src = data.video.sources[2];
                     if (src)
                         setVal('audio_altsource2', src.src);
@@ -336,7 +338,7 @@
 					setVal('src', src);
 					setVal('media_type', data.type);
 				}
-				
+
 				// Vimeo
 				if (src.match(/vimeo\.com\/([0-9]+)/)) {
 					data.width = 425;
@@ -347,7 +349,7 @@
 					setVal('src', src);
 					setVal('media_type', data.type);
 				}
-            
+
 				// stream.cz
 				if (src.match(/stream\.cz\/((?!object).)*\/([0-9]+)/)) {
 					data.width = 425;
@@ -358,7 +360,7 @@
 					setVal('src', src);
 					setVal('media_type', data.type);
 				}
-				
+
 				// Google maps
 				if (src.match(/maps\.google\.([a-z]{2,3})\/maps\/(.+)msid=(.+)/)) {
 					data.width = 425;
@@ -386,13 +388,13 @@
                 } else if (data.type == 'audio') {
                     if (!data.video.sources)
                         data.video.sources = [];
-                    
+
                     data.video.sources[0] = {src : src};
-                    
+
                     src = getVal("audio_altsource1");
                     if (src)
                         data.video.sources[1] = {src : src};
-                    
+
                     src = getVal("audio_altsource2");
                     if (src)
                         data.video.sources[2] = {src : src};

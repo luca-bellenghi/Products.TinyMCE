@@ -2301,3 +2301,26 @@ msgstr "Punto"
 msgid "advlist_square"
 msgstr "Quadrato"
 
+msgid "media_dlg_html5_video_options"
+msgstr "Opzioni video HTML5"
+
+msgid "media_dlg_altsource1"
+msgstr ""
+
+msgid "media_dlg_altsource2"
+msgstr ""
+
+msgid "media_dlg_poster"
+msgstr ""
+
+msgid "media_dlg_preload"
+msgstr "Preload"
+
+msgid "media_dlg_preload_none"
+msgstr "Nessuno"
+
+msgid "media_dlg_preload_metadata"
+msgstr "Preload metadati"
+
+msgid "media_dlg_preload_auto"
+msgstr "Preload automatico"
