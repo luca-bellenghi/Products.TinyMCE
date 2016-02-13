@@ -18,6 +18,9 @@ Fixes:
 - Show the anchor dropdown for internal links again if it was empty once.
   [msom]
 
+- Quick and dirty fix media.js plugin to use video html5 tag
+  [lucabel]
+
 
 1.3.17 (2016-01-08)
 -------------------

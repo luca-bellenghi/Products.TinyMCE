@@ -2305,13 +2305,13 @@ msgid "media_dlg_html5_video_options"
 msgstr "Opzioni video HTML5"
 
 msgid "media_dlg_altsource1"
-msgstr ""
+msgstr "Sorgente alternativa 1"
 
 msgid "media_dlg_altsource2"
-msgstr ""
+msgstr "Sorgente alternativa 2"
 
 msgid "media_dlg_poster"
-msgstr ""
+msgstr "Poster"
 
 msgid "media_dlg_preload"
 msgstr "Preload"
